@@ -71,7 +71,7 @@ const Footer = () => {
         ".stat-number",
         { textContent: 0 },
         {
-          textContent: (i, target) => target.getAttribute("data-value"),
+          textContent: (_:number, target:Element) => target.getAttribute("data-value"),
           duration: 2,
           ease: "power2.out",
           snap: { textContent: 1 },
