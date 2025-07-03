@@ -1,69 +1,110 @@
-# React + TypeScript + Vite
+# ReactMentoring E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce web application built with the latest technologies including **React**, **TypeScript**, **Redux**, **Tailwind CSS**, **GSAP**, **React Router**, and **Vite**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔥 **Modern UI** — Fully responsive design built with Tailwind CSS
+- 🧠 **TypeScript** — Strong typing across the entire project
+- 🛍️ **Dynamic Cards** — Each session/card has its own detail page with unique data
+- 🧾 **Filtering System** — Filter by difficulty level, price range, and rating
+- 🛒 **Shopping Cart** — Add, remove, update quantities, and clear the cart
+- 🎯 **Redux Store** — Centralized state management for filters and cart
+- ⚡ **GSAP Animations** — Smooth scroll-triggered animations for enhanced UX
+- 🌐 **Routing** — Seamless navigation using React Router
+- ⚙️ **Vite** — Super-fast development and build tooling
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-Sessions Page
+![image](https://github.com/user-attachments/assets/30d9cad7-780a-4242-83ad-75bede84f5cc)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-Cart
+![image](https://github.com/user-attachments/assets/34e74928-0f9b-4892-8af6-25485f3e946b)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+-Details Page
+![image](https://github.com/user-attachments/assets/a43c4a13-faca-496e-8856-78d40ab92abc)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-Footer
+![image](https://github.com/user-attachments/assets/98240516-73ea-4384-8e69-b3d6fd5af06e)
+
+
+
+---
+
+## 🚀 Tech Stack
+
+| Tech             | Description                            |
+|------------------|----------------------------------------|
+| **React**        | Frontend library                       |
+| **TypeScript**   | Strongly-typed JavaScript              |
+| **Redux**        | State management (with cart & filters) |
+| **Tailwind CSS** | Utility-first CSS framework            |
+| **GSAP**         | Animations and scroll effects          |
+| **React Router** | Routing between pages                  |
+| **Vite**         | Development and build tool             |
+|**Radix UI**      | Custom components                      |
+|**Lucide React**  | Icon library                           |
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/egyptianpsycho/E-commerce.git
+cd E-commerce
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3. Run the Project
+
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── mission/
+│   ├── sessions/
+│   ├── header.tsx/
+│   ├── footer.tsx/
+│   └── UI/
+│
+├── store/
+│   ├── cartSlice.ts
+│   └── store.ts
+│
+├── App.tsx
+├── main.tsx
+└── CONSTANTS.ts
+```
+
+---
+
+## 🙌 Acknowledgements
+
+- This project was created by **Ziad Abbas**
+  
+---
+
+
+> Made with ❤️ and React
