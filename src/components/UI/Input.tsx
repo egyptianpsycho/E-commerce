@@ -1,4 +1,4 @@
-import React, { type ComponentPropsWithoutRef } from 'react'
+import  { type ComponentPropsWithoutRef } from 'react'
 
 type InputProps = {
     label:string;
