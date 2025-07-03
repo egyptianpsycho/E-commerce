@@ -82,6 +82,7 @@ const Footer = () => {
         }
       );
 
+      // 
       // Back to top button
       if (backToTopRef.current) {
         gsap.set(backToTopRef.current, { scale: 0, opacity: 0 });
